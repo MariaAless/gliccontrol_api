@@ -12,8 +12,12 @@ const Glicemia = sequelize.define('Glicemia', {
     type: DataTypes.FLOAT,
     allowNull: false
   },
-  dataHora: {
-    type: DataTypes.DATE,
+  data: {
+    type: DataTypes.DATEONLY, 
+    allowNull: false
+  },
+  hora: {
+    type: DataTypes.TIME, 
     allowNull: false
   },
   periodo: {
@@ -28,7 +32,7 @@ const Glicemia = sequelize.define('Glicemia', {
     type: DataTypes.INTEGER,
     allowNull: false,
     references: {
-      model: 'Usuario',
+      model: Usuario, 
       key: 'id'
     }
   }
