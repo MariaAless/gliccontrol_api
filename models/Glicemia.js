@@ -24,6 +24,7 @@ const Glicemia = sequelize.define('Glicemia', {
     type: DataTypes.STRING,
     allowNull: true
   },
+  
   observacao: {
     type: DataTypes.TEXT,
     allowNull: true

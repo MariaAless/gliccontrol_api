@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const jwt = require('jsonwebtoken');
-const usuarioRepository = require('../repositories/usuarioRepository');
+const usuarioRepository = require('../repositories/UsuarioRepository');
 
 function generateToken(userId) {
   return jwt.sign({ userId }, process.env.JWT_SECRET, { expiresIn: '7d' });
@@ -50,3 +50,4 @@ router.post('/login', async (req, res) => {
 
 module.exports = router;
 
+console.log('🔁 Rotas de usuário carregadas');

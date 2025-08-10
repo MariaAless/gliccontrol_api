@@ -1,7 +1,6 @@
 //Configuração do banco de dados 
 
 //importações
-
 const { Sequelize } = require('sequelize');
 const path = require('path');
 

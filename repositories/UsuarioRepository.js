@@ -55,3 +55,4 @@ async function validatePassword(email, senha) {
 module.exports = {
   findAll, findById, findByEmail, create, update, remove, validatePassword,
 };
+
